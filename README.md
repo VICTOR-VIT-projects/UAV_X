@@ -22,3 +22,10 @@
 The default planner meets every predeclared internal constraint in 60/60
 saved scenarios, with 0 near misses and 0 collisions. This is a simulation
 only: kinematic flight and an abstracted radio model.
+
+## License
+
+The UAV-X source code is released under the [MIT License](LICENSE).
+Third-party components keep their own licences: Webots R2025a is
+Apache-2.0, and the Ultralytics YOLOv8n weights (`uavx_sim/models/yolov8n.pt`)
+and the optional `ultralytics` package are AGPL-3.0.
