@@ -1,0 +1,118 @@
+{
+ "tag": "scenario_mulefix_off",
+ "all_pass": true,
+ "checks": [
+  {
+   "check": "disconnected_uav_s",
+   "recomputed": 222.6,
+   "reported": 222.6,
+   "tolerance": 2.0,
+   "pass": true
+  },
+  {
+   "check": "connectivity_pct",
+   "recomputed": 92.6,
+   "reported": 92.6,
+   "tolerance": 0.3,
+   "pass": true
+  },
+  {
+   "check": "per_uav_outage_episodes",
+   "recomputed": 9,
+   "reported": 9,
+   "tolerance": 1,
+   "pass": true
+  },
+  {
+   "check": "uav_failure@150s.first_route",
+   "recomputed": 15.1,
+   "reported": 15.1,
+   "tolerance": 0.1,
+   "pass": true
+  },
+  {
+   "check": "uav_failure@150s.all_routes",
+   "recomputed": 15.1,
+   "reported": 15.1,
+   "tolerance": 0.1,
+   "pass": true
+  },
+  {
+   "check": "uav_failure@150s.stable_start",
+   "recomputed": 15.1,
+   "reported": 15.1,
+   "tolerance": 0.1,
+   "pass": true
+  },
+  {
+   "check": "uav_failure@150s.stable_confirmed",
+   "recomputed": 20.16,
+   "reported": 20.16,
+   "tolerance": 0.1,
+   "pass": true
+  },
+  {
+   "check": "uav_failure@150s.detected",
+   "recomputed": 2.56,
+   "reported": 2.56,
+   "tolerance": 0.1,
+   "pass": true
+  },
+  {
+   "check": "comm_outage@300s.first_route",
+   "recomputed": 45.06,
+   "reported": 45.06,
+   "tolerance": 0.1,
+   "pass": true
+  },
+  {
+   "check": "comm_outage@300s.all_routes",
+   "recomputed": 45.06,
+   "reported": 45.06,
+   "tolerance": 0.1,
+   "pass": true
+  },
+  {
+   "check": "comm_outage@300s.stable_start",
+   "recomputed": 45.06,
+   "reported": 45.06,
+   "tolerance": 0.1,
+   "pass": true
+  },
+  {
+   "check": "comm_outage@300s.stable_confirmed",
+   "recomputed": 50.11,
+   "reported": 50.11,
+   "tolerance": 0.1,
+   "pass": true
+  },
+  {
+   "check": "comm_outage@300s.detected",
+   "recomputed": 2.75,
+   "reported": 2.75,
+   "tolerance": 0.1,
+   "pass": true
+  },
+  {
+   "check": "hb_pdr_cohort_pct",
+   "recomputed": 93.3,
+   "reported": 93.3,
+   "tolerance": 0.1,
+   "pass": true
+  },
+  {
+   "check": "data_unique_generated",
+   "recomputed": 368,
+   "reported": 368,
+   "tolerance": 0,
+   "pass": true
+  },
+  {
+   "check": "data_unique_delivered",
+   "recomputed": 368,
+   "reported": 368,
+   "tolerance": 0,
+   "pass": true
+  }
+ ]
+}

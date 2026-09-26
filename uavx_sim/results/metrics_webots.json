@@ -1,0 +1,548 @@
+{
+  "end_reason": "mission complete, fleet landed",
+  "sim_time_s": 736.2,
+  "config": {
+    "seed": 7,
+    "radio_profile": "simple",
+    "backup_policy": "spare",
+    "planner": "GroundStation",
+    "link_rate_mbps": 4.0,
+    "mac_retries": 3
+  },
+  "mission": {
+    "pois_total": 8,
+    "pois_delivered": 8,
+    "completion_pct": 100.0,
+    "completion_definition": "a site is complete when all its imagery chunks (46 x 32768 B) are at the GCS",
+    "all_delivered_at_s": 634.8,
+    "fleet_landed_at_s_observer": 734.7,
+    "fleet_landed_confirmed_by_gcs_s": 736.2,
+    "unaccounted_by_gcs": [
+      5
+    ],
+    "sites": {
+      "P1": {
+        "priority": 1,
+        "added_s": 0.0,
+        "surveyed_s": 61.8,
+        "surveyed_by": 4,
+        "imagery_delivered_s": 66.3,
+        "survey_to_gcs_s": 4.5,
+        "report_to_gcs_s": 66.3,
+        "within_internal_deadline": true,
+        "persons_detected": 3,
+        "persons_ground_truth": 3
+      },
+      "P2": {
+        "priority": 1,
+        "added_s": 0.0,
+        "surveyed_s": 69.7,
+        "surveyed_by": 1,
+        "imagery_delivered_s": 77.0,
+        "survey_to_gcs_s": 7.3,
+        "report_to_gcs_s": 77.0,
+        "within_internal_deadline": true,
+        "persons_detected": 2,
+        "persons_ground_truth": 2
+      },
+      "P3": {
+        "priority": 1,
+        "added_s": 0.0,
+        "surveyed_s": 113.8,
+        "surveyed_by": 4,
+        "imagery_delivered_s": 123.1,
+        "survey_to_gcs_s": 9.3,
+        "report_to_gcs_s": 123.1,
+        "within_internal_deadline": true,
+        "persons_detected": 2,
+        "persons_ground_truth": 4
+      },
+      "P4": {
+        "priority": 1,
+        "added_s": 0.0,
+        "surveyed_s": 212.4,
+        "surveyed_by": 1,
+        "imagery_delivered_s": 223.6,
+        "survey_to_gcs_s": 11.2,
+        "report_to_gcs_s": 223.6,
+        "within_internal_deadline": true,
+        "persons_detected": 2,
+        "persons_ground_truth": 3
+      },
+      "P5": {
+        "priority": 1,
+        "added_s": 0.0,
+        "surveyed_s": 398.0,
+        "surveyed_by": 2,
+        "imagery_delivered_s": 409.8,
+        "survey_to_gcs_s": 11.8,
+        "report_to_gcs_s": 409.8,
+        "within_internal_deadline": true,
+        "persons_detected": 2,
+        "persons_ground_truth": 2
+      },
+      "P6": {
+        "priority": 1,
+        "added_s": 0.0,
+        "surveyed_s": 505.1,
+        "surveyed_by": 2,
+        "imagery_delivered_s": 525.6,
+        "survey_to_gcs_s": 20.5,
+        "report_to_gcs_s": 525.6,
+        "within_internal_deadline": true,
+        "persons_detected": 3,
+        "persons_ground_truth": 3
+      },
+      "P7": {
+        "priority": 1,
+        "added_s": 0.0,
+        "surveyed_s": 593.5,
+        "surveyed_by": 2,
+        "imagery_delivered_s": 634.5,
+        "survey_to_gcs_s": 41.0,
+        "report_to_gcs_s": 634.5,
+        "within_internal_deadline": true,
+        "persons_detected": 4,
+        "persons_ground_truth": 4
+      },
+      "H1": {
+        "priority": 2,
+        "added_s": 220.0,
+        "surveyed_s": 302.5,
+        "surveyed_by": 1,
+        "imagery_delivered_s": 354.7,
+        "survey_to_gcs_s": 52.2,
+        "report_to_gcs_s": 134.7,
+        "within_internal_deadline": true,
+        "persons_detected": 3,
+        "persons_ground_truth": 3
+      }
+    },
+    "survey_to_gcs_latency_s": {
+      "mean": 19.7,
+      "max": 52.2
+    },
+    "sites_within_internal_deadline": 8,
+    "internal_deadline_s": 60.0,
+    "high_priority_response_s": [
+      134.7
+    ]
+  },
+  "perception": {
+    "count_rule": "per site: number of static ground tracks (person boxes projected to the ground, within 8 m of the site, seen in >= 20% of the settled survey frames); see docs/PERCEPTION.md",
+    "sites_scored": 8,
+    "sites_exact": 6,
+    "persons_undercount": 3,
+    "persons_overcount": 0,
+    "note": "count error only: no per-person matching, so misses and false detections at one site can cancel; empty = no detector (headless)",
+    "detector": "YOLOv8n (COCO), onboard, conf >= 0.30; counting rule: static ground tracks (perception.py)",
+    "settled_frames_per_site": {
+      "P1": 46,
+      "P2": 45,
+      "P3": 50,
+      "P4": 48,
+      "H1": 48,
+      "P5": 49,
+      "P6": 48,
+      "P7": 49
+    }
+  },
+  "communication": {
+    "connectivity_pct": 91.9,
+    "disconnected_uav_s": 227.1,
+    "network_state_pct": {
+      "connected_redundant": 22.0,
+      "connected_single_point": 53.2,
+      "partitioned": 24.8
+    },
+    "network_state_definition": "share of time with >= 1 airborne mission UAV: partitioned (some UAV has no route) / connected with a critical relay / connected and redundant",
+    "worst_critical_relay_dependants": 4,
+    "outage_episodes": {
+      "per_uav_episodes": 7,
+      "mission_partition_episodes": 4,
+      "merge_policy": "per UAV, route gaps shorter than 1.0s are one episode; mission episodes = union over UAVs",
+      "by_cause": {
+        "survey beyond the network (planned by GCS)": {
+          "episodes": 2,
+          "uav_s": 121.5
+        },
+        "fault-attributed: upstream relay lost": {
+          "episodes": 4,
+          "uav_s": 60.0
+        },
+        "injected radio outage (own radio off)": {
+          "episodes": 1,
+          "uav_s": 45.0
+        }
+      },
+      "fault_attributed_uav_s": 105.2,
+      "not_fault_attributed_uav_s": 121.5,
+      "gcs_silences": 7,
+      "gcs_silences_with_path_present": 0
+    },
+    "classes": {
+      "hb": {
+        "generated": 6262,
+        "delivered": 5757,
+        "expired": 341,
+        "dropped_radio_down": 164,
+        "hop_tx": 11138,
+        "bytes_generated": 1252400,
+        "bytes_on_air": 2227600,
+        "pdr_cohort_pct": 91.9,
+        "latency": {
+          "n": 5757,
+          "p50_s": 0.042,
+          "p95_s": 0.175,
+          "max_s": 1.988
+        }
+      },
+      "cmd": {
+        "generated": 7361,
+        "delivered": 5760,
+        "expired": 1595,
+        "lost": 1,
+        "hop_tx": 11112,
+        "pending_end": 5,
+        "bytes_generated": 2208300,
+        "bytes_on_air": 3333600,
+        "pdr_cohort_pct": 78.3,
+        "latency": {
+          "n": 5760,
+          "p50_s": 0.042,
+          "p95_s": 0.138,
+          "max_s": 1.967
+        }
+      },
+      "ack": {
+        "generated": 404,
+        "delivered": 404,
+        "hop_tx": 1154,
+        "bytes_generated": 16160,
+        "bytes_on_air": 46160,
+        "pdr_cohort_pct": 100.0,
+        "latency": {
+          "n": 404,
+          "p50_s": 0.21,
+          "p95_s": 0.41,
+          "max_s": 0.671
+        }
+      },
+      "data": {
+        "generated": 368,
+        "delivered": 368,
+        "hop_tx": 1200,
+        "e2e_retransmissions": 36,
+        "bytes_generated": 12058624,
+        "bytes_on_air": 39321600,
+        "latency": {
+          "n": 368,
+          "p50_s": 0.489,
+          "p95_s": 1.118,
+          "max_s": 26.361
+        }
+      },
+      "thumb": {
+        "generated": 1420,
+        "delivered": 1292,
+        "expired": 86,
+        "dropped_radio_down": 41,
+        "lost": 1,
+        "hop_tx": 2613,
+        "bytes_generated": 11360000,
+        "bytes_on_air": 20904000,
+        "pdr_cohort_pct": 91.0,
+        "latency": {
+          "n": 1292,
+          "p50_s": 0.073,
+          "p95_s": 0.261,
+          "max_s": 1.874
+        }
+      }
+    },
+    "command_ack_latency_s": {
+      "n": 5716,
+      "p50": 0.49,
+      "p95": 0.609,
+      "max": 15.66
+    },
+    "commands_superseded_before_delivery": 307,
+    "commands_discarded_stale": 6,
+    "commands_discarded_expired": 0,
+    "heartbeats_discarded_stale_at_gcs": 1,
+    "imagery_chunks_duplicate_at_gcs": 36,
+    "airtime_s": {
+      "0": 7.0,
+      "1": 32.2,
+      "2": 29.0,
+      "3": 29.9,
+      "4": 41.6,
+      "5": 5.7
+    },
+    "mean_hops": 1.91,
+    "max_hops": 4
+  },
+  "relay": {
+    "energy_handovers": [
+      {
+        "uav": 3,
+        "t_start": 422.6,
+        "slot": [
+          "RELAY",
+          "P6",
+          1
+        ],
+        "xy": [
+          -450.0,
+          -687.5
+        ],
+        "margin_start": 12.0,
+        "battery_start": 29.2,
+        "dependants": [
+          1,
+          2,
+          4
+        ],
+        "replacement": 4,
+        "replacements_tried": [
+          4
+        ],
+        "t_dispatch": 422.6,
+        "t_on_station": 453.3,
+        "t_bidirectional": 423.6,
+        "t_drain": 454.3,
+        "t_downstream_ok": 454.3,
+        "t_hold_passed": 459.5,
+        "t_released": 459.5,
+        "rollbacks": 0,
+        "battery_released": 27.3,
+        "landed_battery": 24.9,
+        "outcome": "relieved on station (verified)",
+        "release_reason": "verified: replacement on station, traffic both ways, 2 dependant(s) served, 5s hold",
+        "checks": {
+          "on_station": true,
+          "bidirectional": true,
+          "drained": true,
+          "downstream": true,
+          "dependants_active": [
+            1,
+            2
+          ],
+          "exempt_silent_before_drain": []
+        },
+        "observer_dependant_unrouted_s_during": 0,
+        "observer_dependant_unrouted_s_30s_after_release": 27,
+        "dependant_outage_by_cause_s": {
+          "survey beyond the network (planned by GCS)": 26.5
+        },
+        "handover_attributable_interruption_s": 0
+      }
+    ],
+    "redundancy_infeasible": [
+      [
+        52.3,
+        "no spare UAV for a backup relay (6 site(s) still unserved)"
+      ],
+      [
+        60.5,
+        "no spare UAV for a backup relay (5 site(s) still unserved)"
+      ],
+      [
+        66.6,
+        "no spare UAV for a backup relay (4 site(s) still unserved)"
+      ],
+      [
+        124.0,
+        "no spare UAV for a backup relay (3 site(s) still unserved)"
+      ],
+      [
+        152.8,
+        "no spare UAV for a backup relay (4 site(s) still unserved)"
+      ],
+      [
+        166.2,
+        "no spare UAV for a backup relay (3 site(s) still unserved)"
+      ],
+      [
+        220.5,
+        "no spare UAV for a backup relay (4 site(s) still unserved)"
+      ],
+      [
+        224.6,
+        "no spare UAV for a backup relay (3 site(s) still unserved)"
+      ],
+      [
+        355.0,
+        "no spare UAV for a backup relay (2 site(s) still unserved)"
+      ],
+      [
+        410.3,
+        "no spare UAV for a backup relay (1 site(s) still unserved)"
+      ],
+      [
+        422.6,
+        "no spare UAV for a backup relay (2 site(s) still unserved)"
+      ],
+      [
+        526.3,
+        "no spare UAV for a backup relay (1 site(s) still unserved)"
+      ]
+    ]
+  },
+  "faults": [
+    {
+      "type": "uav_failure",
+      "uav": 5,
+      "t": 150.02,
+      "faulted_aircraft": "aircraft lost: irrecoverable, excluded from recovery",
+      "population": {
+        "before_fault_routed": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "orphaned": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "unaffected": [],
+        "required": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "membership_changes": []
+      },
+      "detected": 2.56,
+      "first_route": 15.1,
+      "all_routes": 15.1,
+      "stable_start": 15.1,
+      "stable_confirmed": 20.16,
+      "first_app_delivery": 15.09,
+      "all_app_delivery": 15.28,
+      "flaps": 0,
+      "required_disconnected_uav_s": 60.4,
+      "unaffected_continuity_pct": null,
+      "overlapping_faults": [],
+      "outcome": "recovered: required population stable",
+      "hard": true,
+      "dependants": 4
+    },
+    {
+      "type": "comm_outage",
+      "uav": 1,
+      "t": 300.03,
+      "faulted_aircraft": "temporary outage: included in its own recovery",
+      "population": {
+        "before_fault_routed": [
+          2,
+          3,
+          4
+        ],
+        "orphaned": [],
+        "unaffected": [
+          2,
+          3,
+          4
+        ],
+        "required": [
+          1
+        ],
+        "membership_changes": []
+      },
+      "detected": 2.75,
+      "first_route": 45.06,
+      "all_routes": 45.06,
+      "stable_start": 45.06,
+      "stable_confirmed": 50.11,
+      "first_app_delivery": 45.63,
+      "all_app_delivery": 45.63,
+      "flaps": 0,
+      "required_disconnected_uav_s": 45.1,
+      "unaffected_continuity_pct": 100.0,
+      "overlapping_faults": [],
+      "outcome": "recovered: required population stable",
+      "duration": 45.0,
+      "dependants": 0
+    },
+    {
+      "type": "battery_sag",
+      "uav": 3,
+      "t": 360.00000000001364,
+      "battery_before": 84.4,
+      "battery_after": 32.4,
+      "dependants": 3
+    }
+  ],
+  "safety": {
+    "thresholds": {
+      "near_miss_m": 5.0,
+      "collision_proxy_m": 1.5,
+      "note": "geometric proxies on kinematic trajectories; closest approach checked continuously between 64 ms samples"
+    },
+    "min_separation_m": 6.01,
+    "near_miss_episodes": 0,
+    "collision_proxy_episodes": 0,
+    "controller_caused_episodes": 0,
+    "violation_time_s": 0,
+    "episodes": [],
+    "min_terrain_clearance_cruise_m": 59.5,
+    "geofence_violations": 0,
+    "min_airborne_battery_pct": 24.9,
+    "battery_depletions": 0,
+    "landings": [
+      {
+        "uav": 1,
+        "t": 711.0,
+        "battery_pct": 62.0
+      },
+      {
+        "uav": 2,
+        "t": 734.7,
+        "battery_pct": 60.7
+      },
+      {
+        "uav": 3,
+        "t": 502.2,
+        "battery_pct": 24.9
+      },
+      {
+        "uav": 3,
+        "t": 713.4,
+        "battery_pct": 91.8
+      },
+      {
+        "uav": 4,
+        "t": 681.9,
+        "battery_pct": 64.5
+      }
+    ]
+  },
+  "information_flow": {
+    "gcs_heartbeats_applied": 5756,
+    "gcs_heartbeats_stale_discarded": 1,
+    "heartbeats_that_crossed_the_channel": 5757,
+    "uav_commands_applied": 5754,
+    "commands_that_crossed_the_channel": 5760,
+    "gcs_chunks_received": 404,
+    "chunks_that_crossed_the_channel": 404,
+    "bypass": false
+  },
+  "constraints": {
+    "eventually_complete": true,
+    "imagery_complete_by": true,
+    "fleet_landed_by": true,
+    "high_priority_response": true,
+    "timely_sites": true,
+    "separation": true,
+    "no_collision": true,
+    "geofence": true,
+    "no_depletion": true,
+    "landing_reserve": true,
+    "operational_success": true
+  }
+}

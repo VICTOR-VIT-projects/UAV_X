@@ -1,0 +1,300 @@
+{
+ "split": "tune = 76 m views; validate = 60 m and 92 m views",
+ "grid_on_tune": [
+  {
+   "iou": "iou0.70",
+   "track_r": 0.3,
+   "support": 0.2,
+   "tune": {
+    "views": 24,
+    "exact_views": 20,
+    "tp": 66,
+    "fp": 0,
+    "fn": 6,
+    "precision": 1.0,
+    "recall": 0.917
+   }
+  },
+  {
+   "iou": "iou0.70",
+   "track_r": 0.3,
+   "support": 0.4,
+   "tune": {
+    "views": 24,
+    "exact_views": 16,
+    "tp": 62,
+    "fp": 0,
+    "fn": 10,
+    "precision": 1.0,
+    "recall": 0.861
+   }
+  },
+  {
+   "iou": "iou0.70",
+   "track_r": 0.3,
+   "support": 0.6,
+   "tune": {
+    "views": 24,
+    "exact_views": 14,
+    "tp": 58,
+    "fp": 0,
+    "fn": 14,
+    "precision": 1.0,
+    "recall": 0.806
+   }
+  },
+  {
+   "iou": "iou0.70",
+   "track_r": 0.5,
+   "support": 0.2,
+   "tune": {
+    "views": 24,
+    "exact_views": 20,
+    "tp": 66,
+    "fp": 0,
+    "fn": 6,
+    "precision": 1.0,
+    "recall": 0.917
+   }
+  },
+  {
+   "iou": "iou0.70",
+   "track_r": 0.5,
+   "support": 0.4,
+   "tune": {
+    "views": 24,
+    "exact_views": 16,
+    "tp": 62,
+    "fp": 0,
+    "fn": 10,
+    "precision": 1.0,
+    "recall": 0.861
+   }
+  },
+  {
+   "iou": "iou0.70",
+   "track_r": 0.5,
+   "support": 0.6,
+   "tune": {
+    "views": 24,
+    "exact_views": 14,
+    "tp": 58,
+    "fp": 0,
+    "fn": 14,
+    "precision": 1.0,
+    "recall": 0.806
+   }
+  },
+  {
+   "iou": "iou0.70",
+   "track_r": 1.0,
+   "support": 0.2,
+   "tune": {
+    "views": 24,
+    "exact_views": 20,
+    "tp": 66,
+    "fp": 0,
+    "fn": 6,
+    "precision": 1.0,
+    "recall": 0.917
+   }
+  },
+  {
+   "iou": "iou0.70",
+   "track_r": 1.0,
+   "support": 0.4,
+   "tune": {
+    "views": 24,
+    "exact_views": 16,
+    "tp": 62,
+    "fp": 0,
+    "fn": 10,
+    "precision": 1.0,
+    "recall": 0.861
+   }
+  },
+  {
+   "iou": "iou0.70",
+   "track_r": 1.0,
+   "support": 0.6,
+   "tune": {
+    "views": 24,
+    "exact_views": 14,
+    "tp": 58,
+    "fp": 0,
+    "fn": 14,
+    "precision": 1.0,
+    "recall": 0.806
+   }
+  },
+  {
+   "iou": "iou0.90",
+   "track_r": 0.3,
+   "support": 0.2,
+   "tune": {
+    "views": 24,
+    "exact_views": 5,
+    "tp": 68,
+    "fp": 30,
+    "fn": 4,
+    "precision": 0.694,
+    "recall": 0.944
+   }
+  },
+  {
+   "iou": "iou0.90",
+   "track_r": 0.3,
+   "support": 0.4,
+   "tune": {
+    "views": 24,
+    "exact_views": 7,
+    "tp": 65,
+    "fp": 19,
+    "fn": 7,
+    "precision": 0.774,
+    "recall": 0.903
+   }
+  },
+  {
+   "iou": "iou0.90",
+   "track_r": 0.3,
+   "support": 0.6,
+   "tune": {
+    "views": 24,
+    "exact_views": 10,
+    "tp": 61,
+    "fp": 8,
+    "fn": 11,
+    "precision": 0.884,
+    "recall": 0.847
+   }
+  },
+  {
+   "iou": "iou0.90",
+   "track_r": 0.5,
+   "support": 0.2,
+   "tune": {
+    "views": 24,
+    "exact_views": 5,
+    "tp": 68,
+    "fp": 30,
+    "fn": 4,
+    "precision": 0.694,
+    "recall": 0.944
+   }
+  },
+  {
+   "iou": "iou0.90",
+   "track_r": 0.5,
+   "support": 0.4,
+   "tune": {
+    "views": 24,
+    "exact_views": 7,
+    "tp": 65,
+    "fp": 19,
+    "fn": 7,
+    "precision": 0.774,
+    "recall": 0.903
+   }
+  },
+  {
+   "iou": "iou0.90",
+   "track_r": 0.5,
+   "support": 0.6,
+   "tune": {
+    "views": 24,
+    "exact_views": 10,
+    "tp": 61,
+    "fp": 8,
+    "fn": 11,
+    "precision": 0.884,
+    "recall": 0.847
+   }
+  },
+  {
+   "iou": "iou0.90",
+   "track_r": 1.0,
+   "support": 0.2,
+   "tune": {
+    "views": 24,
+    "exact_views": 5,
+    "tp": 68,
+    "fp": 29,
+    "fn": 4,
+    "precision": 0.701,
+    "recall": 0.944
+   }
+  },
+  {
+   "iou": "iou0.90",
+   "track_r": 1.0,
+   "support": 0.4,
+   "tune": {
+    "views": 24,
+    "exact_views": 7,
+    "tp": 65,
+    "fp": 19,
+    "fn": 7,
+    "precision": 0.774,
+    "recall": 0.903
+   }
+  },
+  {
+   "iou": "iou0.90",
+   "track_r": 1.0,
+   "support": 0.6,
+   "tune": {
+    "views": 24,
+    "exact_views": 10,
+    "tp": 61,
+    "fp": 8,
+    "fn": 11,
+    "precision": 0.884,
+    "recall": 0.847
+   }
+  }
+ ],
+ "chosen": {
+  "iou": "iou0.70",
+  "track_r": 0.3,
+  "support": 0.2
+ },
+ "chosen_validate": {
+  "views": 48,
+  "exact_views": 36,
+  "tp": 130,
+  "fp": 1,
+  "fn": 14,
+  "precision": 0.992,
+  "recall": 0.903
+ },
+ "baselines_validate": {
+  "old rule: max boxes in one frame (iou 0.70, associated)": {
+   "views": 48,
+   "exact_views": 36,
+   "tp": 128,
+   "fp": 0,
+   "fn": 16,
+   "precision": 1.0,
+   "recall": 0.889
+  },
+  "tracks with the v3.1 defaults (iou 0.70, 1.0 m, 0.4)": {
+   "views": 48,
+   "exact_views": 35,
+   "tp": 127,
+   "fp": 0,
+   "fn": 17,
+   "precision": 1.0,
+   "recall": 0.882
+  }
+ },
+ "chosen_all_views": {
+  "views": 72,
+  "exact_views": 56,
+  "tp": 196,
+  "fp": 1,
+  "fn": 20,
+  "precision": 0.995,
+  "recall": 0.907
+ }
+}

@@ -1,0 +1,117 @@
+vision: YOLOv8n loaded from C:\Users\Azlaan\Desktop\uavx\webots_3\models\yolov8n.pt
+recording 3D view to C:\Users\Azlaan\Desktop\uavx\webots_3\media\uav_x_4_3d.mp4, dashboard frames to C:\Users\Azlaan\Desktop\uavx\webots_3\media\uav_x_4_frames
+UAV-X Stage 1 PoC v3: 5 UAVs, 7 PoIs, radio range 600 m, scripted faults ON
+[t=   1.1s] GCS: task UAV3 -> HOME
+[t=   1.1s] GCS: task UAV5 -> HOME
+[t=   1.1s] GCS: task UAV2 -> RELAY P1
+[t=   1.1s] GCS: task UAV4 -> SURVEY P1
+[t=   1.1s] GCS: task UAV1 -> SURVEY P2
+[t=   1.2s] UAV1: launching for SURVEY P2
+[t=   1.3s] UAV2: launching for RELAY P1
+[t=   1.5s] UAV4: launching for SURVEY P1
+[t=  60.0s] UAV3: battery swapped, ready
+[t=  60.0s] UAV5: battery swapped, ready
+[t=  60.5s] GCS: task UAV3 -> RELAY P2
+[t=  60.9s] UAV3: launching for RELAY P2
+[t=  61.5s] GCS: task UAV5 -> SURVEY P3
+[t=  61.6s] UAV5: launching for SURVEY P3
+[t=  61.8s] UAV4: surveyed P1
+[t=  66.4s] GCS: imagery for P1 complete from UAV4 (1 hop), onboard detector flagged 3 person(s)
+[t=  66.6s] GCS: task UAV4 -> RELAY P3
+[t=  66.6s] GCS: task UAV2 -> SURVEY P4
+[t=  69.7s] UAV1: surveyed P2
+[t=  77.1s] GCS: imagery for P2 complete from UAV1 (2 hops), onboard detector flagged 2 person(s)
+[t=  77.9s] GCS: task UAV5 -> RELAY P3
+[t=  77.9s] GCS: task UAV3 -> RELAY P3
+[t=  77.9s] GCS: task UAV4 -> SURVEY P3
+[t=  77.9s] GCS: task UAV2 -> RELAY P4
+[t=  77.9s] GCS: task UAV1 -> SURVEY P4
+[t= 113.8s] UAV4: surveyed P3
+[t= 123.1s] GCS: imagery for P3 complete from UAV4 (2 hops), onboard detector flagged 2 person(s)
+[t= 124.0s] GCS: task UAV5 -> RELAY P4
+[t= 124.0s] GCS: task UAV3 -> RELAY P4
+[t= 124.0s] GCS: task UAV4 -> SURVEY P4
+[t= 124.0s] GCS: task UAV1 -> SURVEY P5
+[t= 150.0s] UAV5: CRITICAL FAULT -> failsafe emergency landing, radio lost
+[t= 150.0s] FAULT: UAV5 critical fault + radio loss (was relaying for 4 UAV(s))
+[t= 152.5s] GCS: UAV4 declared LOST (no heartbeat for 3s) -> replanning
+[t= 152.6s] GCS: UAV5 declared LOST (no heartbeat for 3s) -> replanning
+[t= 152.6s] GCS: task UAV1 -> RELAY P4
+[t= 152.8s] GCS: UAV1 declared LOST (no heartbeat for 3s) -> replanning
+[t= 152.8s] GCS: UAV2 declared LOST (no heartbeat for 3s) -> replanning
+[t= 152.9s] GCS: UAV3 declared LOST (no heartbeat for 3s) -> replanning
+[t= 165.1s] GCS: UAV3 link re-acquired after 15.2s
+[t= 165.2s] GCS: UAV2 link re-acquired after 15.3s
+[t= 165.2s] GCS: UAV4 link re-acquired after 15.7s
+[t= 165.3s] GCS: UAV1 link re-acquired after 15.5s
+[t= 166.2s] GCS: task UAV4 -> RELAY P4
+[t= 166.2s] GCS: task UAV1 -> SURVEY P4
+[t= 186.7s] UAV5: emergency landing complete, powered down
+[t= 212.4s] UAV1: surveyed P4
+[t= 220.0s] GCS: new HIGH-PRIORITY PoI H1 reported at (-600, 850)
+[t= 220.5s] GCS: task UAV3 -> RELAY H1
+[t= 220.5s] GCS: task UAV4 -> RELAY H1
+[t= 220.5s] GCS: task UAV2 -> RELAY H1
+[t= 220.5s] GCS: task UAV1 -> SURVEY H1
+[t= 223.7s] GCS: imagery for P4 complete from UAV1 (4 hops), onboard detector flagged 2 person(s)
+[t= 300.0s] FAULT: UAV1 radio outage for 45s
+[t= 302.5s] UAV1: surveyed H1
+[t= 302.8s] GCS: UAV1 declared LOST (no heartbeat for 3s) -> replanning
+[t= 302.8s] UAV1: carrying imagery back (data mule)
+[t= 345.1s] UAV1 radio restored
+[t= 345.7s] GCS: UAV1 link re-acquired after 45.9s
+[t= 354.8s] GCS: imagery for H1 complete from UAV1 (2 hops), onboard detector flagged 3 person(s)
+[t= 354.8s] UAV1: imagery acked, resuming task
+[t= 355.0s] GCS: task UAV3 -> RELAY P5
+[t= 355.0s] GCS: task UAV4 -> RELAY P5
+[t= 355.0s] GCS: task UAV1 -> RELAY P5
+[t= 355.0s] GCS: task UAV2 -> SURVEY P5
+[t= 360.0s] FAULT: UAV3 energy-availability fault 84% -> 32% (relaying for 3 UAV(s))
+[t= 398.0s] UAV2: surveyed P5
+[t= 409.9s] GCS: imagery for P5 complete from UAV2 (4 hops), onboard detector flagged 2 person(s)
+[t= 410.3s] GCS: task UAV3 -> RELAY P6
+[t= 410.3s] GCS: task UAV4 -> RELAY P6
+[t= 410.3s] GCS: task UAV1 -> RELAY P6
+[t= 410.3s] GCS: task UAV2 -> SURVEY P6
+[t= 422.6s] GCS: UAV3 relay energy margin 12.0% < 12% -> starting relay handover
+[t= 422.6s] GCS: UAV4 dispatched to relieve UAV3 (78% battery)
+[t= 453.3s] GCS: UAV4 on station, traffic verified -> UAV3 told to stop forwarding (verifying downstream)
+[t= 459.5s] GCS: UAV3 released home (verified: replacement on station, traffic both ways, 2 dependant(s) served, 5s hold; 27%, needs 17% incl. reserve)
+[t= 459.5s] GCS: task UAV3 -> HOME
+[t= 465.9s] GCS: UAV2 declared LOST (no heartbeat for 3s) -> replanning
+[t= 502.2s] UAV3: landed with 25%, battery swap started
+[t= 505.1s] UAV2: surveyed P6
+[t= 505.2s] UAV2: carrying imagery back (data mule)
+[t= 512.8s] GCS: UAV2 link re-acquired after 49.9s
+[t= 525.6s] GCS: imagery for P6 complete from UAV2 (3 hops), onboard detector flagged 3 person(s)
+[t= 525.7s] UAV2: imagery acked, resuming task
+[t= 526.3s] GCS: task UAV4 -> RELAY P7
+[t= 526.3s] GCS: task UAV1 -> RELAY P7
+[t= 526.3s] GCS: task UAV2 -> SURVEY P7
+[t= 548.8s] GCS: UAV2 declared LOST (no heartbeat for 3s) -> replanning
+[t= 562.2s] UAV3: battery swapped, ready
+[t= 563.1s] GCS: task UAV3 -> RELAY P7
+[t= 563.5s] UAV3: launching for RELAY P7
+[t= 593.5s] UAV2: surveyed P7
+[t= 593.5s] UAV2: carrying imagery back (data mule)
+[t= 618.0s] GCS: UAV2 link re-acquired after 72.2s
+[t= 634.6s] GCS: imagery for P7 complete from UAV2 (3 hops), onboard detector flagged 4 person(s)
+[t= 634.7s] UAV2: imagery acked, resuming task
+[t= 634.8s] GCS: all 8 sites' imagery delivered at t=634.8s -> recalling fleet
+[t= 634.8s] GCS: task UAV1 -> HOME
+[t= 634.8s] GCS: task UAV2 -> HOME
+[t= 634.8s] GCS: task UAV3 -> HOME
+[t= 634.8s] GCS: task UAV4 -> HOME
+[t= 634.8s] GCS: task UAV5 -> HOME
+[t= 681.9s] UAV4: landed with 65%, battery swap started
+[t= 711.0s] UAV1: landed with 62%, battery swap started
+[t= 713.4s] UAV3: landed with 92%, battery swap started
+[t= 734.7s] UAV2: landed with 61%, battery swap started
+[t= 734.7s] OBSERVER: surviving fleet landed (t=734.7s); imagery for every site at GCS since t=634.8s
+[t= 736.2s] GCS: every reachable UAV reports landed at t=736.2s; unaccounted: UAV5
+[t= 736.2s] MISSION COMPLETE: imagery at GCS t=634.8s · fleet landed (observer) t=734.7s · GCS-confirmed t=736.2s
+results and raw logs written to C:\Users\Azlaan\Desktop\uavx\webots_3\results
+3D movie saved
+raw-log validation: ALL PASS
+composited video written to C:\Users\Azlaan\Desktop\uavx\webots_3\media\uav_x_4.mp4
+webots exit 0

@@ -1,0 +1,105 @@
+vision: YOLOv8n loaded from C:\Users\Azlaan\Desktop\uavx\webots_3\models\yolov8n.pt
+bench P1 alt 60 az -30: truth 3 | max-any 3 | max-assoc 3 | tracks 3 (tp 3 fp 0 fn 0)
+bench P1 alt 60 az +0: truth 3 | max-any 3 | max-assoc 3 | tracks 3 (tp 3 fp 0 fn 0)
+bench P1 alt 60 az +30: truth 3 | max-any 2 | max-assoc 2 | tracks 2 (tp 2 fp 0 fn 1)
+bench P1 alt 76 az -30: truth 3 | max-any 3 | max-assoc 3 | tracks 3 (tp 3 fp 0 fn 0)
+bench P1 alt 76 az +0: truth 3 | max-any 3 | max-assoc 3 | tracks 3 (tp 3 fp 0 fn 0)
+bench P1 alt 76 az +30: truth 3 | max-any 3 | max-assoc 3 | tracks 2 (tp 2 fp 0 fn 1)
+bench P1 alt 92 az -30: truth 3 | max-any 3 | max-assoc 3 | tracks 3 (tp 3 fp 0 fn 0)
+bench P1 alt 92 az +0: truth 3 | max-any 3 | max-assoc 3 | tracks 3 (tp 3 fp 0 fn 0)
+bench P1 alt 92 az +30: truth 3 | max-any 2 | max-assoc 2 | tracks 2 (tp 2 fp 0 fn 1)
+bench P2 alt 60 az -30: truth 2 | max-any 2 | max-assoc 2 | tracks 2 (tp 2 fp 0 fn 0)
+bench P2 alt 60 az +0: truth 2 | max-any 2 | max-assoc 2 | tracks 2 (tp 2 fp 0 fn 0)
+bench P2 alt 60 az +30: truth 2 | max-any 0 | max-assoc 0 | tracks 0 (tp 0 fp 0 fn 2)
+bench P2 alt 76 az -30: truth 2 | max-any 2 | max-assoc 2 | tracks 2 (tp 2 fp 0 fn 0)
+bench P2 alt 76 az +0: truth 2 | max-any 2 | max-assoc 2 | tracks 2 (tp 2 fp 0 fn 0)
+bench P2 alt 76 az +30: truth 2 | max-any 0 | max-assoc 0 | tracks 0 (tp 0 fp 0 fn 2)
+bench P2 alt 92 az -30: truth 2 | max-any 2 | max-assoc 2 | tracks 2 (tp 2 fp 0 fn 0)
+bench P2 alt 92 az +0: truth 2 | max-any 2 | max-assoc 2 | tracks 2 (tp 2 fp 0 fn 0)
+bench P2 alt 92 az +30: truth 2 | max-any 0 | max-assoc 0 | tracks 0 (tp 0 fp 0 fn 2)
+bench P3 alt 60 az -30: truth 4 | max-any 4 | max-assoc 4 | tracks 4 (tp 4 fp 0 fn 0)
+bench P3 alt 60 az +0: truth 4 | max-any 2 | max-assoc 2 | tracks 2 (tp 2 fp 0 fn 2)
+bench P3 alt 60 az +30: truth 4 | max-any 3 | max-assoc 3 | tracks 4 (tp 4 fp 0 fn 0)
+bench P3 alt 76 az -30: truth 4 | max-any 4 | max-assoc 4 | tracks 4 (tp 4 fp 0 fn 0)
+bench P3 alt 76 az +0: truth 4 | max-any 2 | max-assoc 2 | tracks 2 (tp 2 fp 0 fn 2)
+bench P3 alt 76 az +30: truth 4 | max-any 4 | max-assoc 4 | tracks 3 (tp 3 fp 0 fn 1)
+bench P3 alt 92 az -30: truth 4 | max-any 4 | max-assoc 4 | tracks 4 (tp 4 fp 0 fn 0)
+bench P3 alt 92 az +0: truth 4 | max-any 2 | max-assoc 2 | tracks 2 (tp 2 fp 0 fn 2)
+bench P3 alt 92 az +30: truth 4 | max-any 4 | max-assoc 4 | tracks 3 (tp 3 fp 0 fn 1)
+bench P4 alt 60 az -30: truth 3 | max-any 2 | max-assoc 2 | tracks 2 (tp 2 fp 0 fn 1)
+bench P4 alt 60 az +0: truth 3 | max-any 3 | max-assoc 3 | tracks 3 (tp 3 fp 0 fn 0)
+bench P4 alt 60 az +30: truth 3 | max-any 2 | max-assoc 2 | tracks 2 (tp 2 fp 0 fn 1)
+bench P4 alt 76 az -30: truth 3 | max-any 2 | max-assoc 2 | tracks 2 (tp 2 fp 0 fn 1)
+bench P4 alt 76 az +0: truth 3 | max-any 2 | max-assoc 2 | tracks 2 (tp 2 fp 0 fn 1)
+bench P4 alt 76 az +30: truth 3 | max-any 2 | max-assoc 2 | tracks 2 (tp 2 fp 0 fn 1)
+bench P4 alt 92 az -30: truth 3 | max-any 3 | max-assoc 3 | tracks 3 (tp 3 fp 0 fn 0)
+bench P4 alt 92 az +0: truth 3 | max-any 2 | max-assoc 2 | tracks 2 (tp 2 fp 0 fn 1)
+bench P4 alt 92 az +30: truth 3 | max-any 2 | max-assoc 2 | tracks 2 (tp 2 fp 0 fn 1)
+bench P5 alt 60 az -30: truth 2 | max-any 2 | max-assoc 2 | tracks 2 (tp 2 fp 0 fn 0)
+bench P5 alt 60 az +0: truth 2 | max-any 2 | max-assoc 2 | tracks 2 (tp 2 fp 0 fn 0)
+bench P5 alt 60 az +30: truth 2 | max-any 2 | max-assoc 2 | tracks 1 (tp 1 fp 0 fn 1)
+bench P5 alt 76 az -30: truth 2 | max-any 2 | max-assoc 2 | tracks 1 (tp 1 fp 0 fn 1)
+bench P5 alt 76 az +0: truth 2 | max-any 2 | max-assoc 2 | tracks 2 (tp 2 fp 0 fn 0)
+bench P5 alt 76 az +30: truth 2 | max-any 2 | max-assoc 2 | tracks 2 (tp 2 fp 0 fn 0)
+bench P5 alt 92 az -30: truth 2 | max-any 1 | max-assoc 1 | tracks 1 (tp 1 fp 0 fn 1)
+bench P5 alt 92 az +0: truth 2 | max-any 2 | max-assoc 2 | tracks 2 (tp 2 fp 0 fn 0)
+bench P5 alt 92 az +30: truth 2 | max-any 2 | max-assoc 2 | tracks 2 (tp 2 fp 0 fn 0)
+bench P6 alt 60 az -30: truth 3 | max-any 3 | max-assoc 3 | tracks 3 (tp 3 fp 0 fn 0)
+bench P6 alt 60 az +0: truth 3 | max-any 3 | max-assoc 3 | tracks 3 (tp 3 fp 0 fn 0)
+bench P6 alt 60 az +30: truth 3 | max-any 3 | max-assoc 3 | tracks 3 (tp 3 fp 0 fn 0)
+bench P6 alt 76 az -30: truth 3 | max-any 3 | max-assoc 3 | tracks 3 (tp 3 fp 0 fn 0)
+bench P6 alt 76 az +0: truth 3 | max-any 3 | max-assoc 3 | tracks 3 (tp 3 fp 0 fn 0)
+bench P6 alt 76 az +30: truth 3 | max-any 3 | max-assoc 3 | tracks 3 (tp 3 fp 0 fn 0)
+bench P6 alt 92 az -30: truth 3 | max-any 3 | max-assoc 3 | tracks 3 (tp 3 fp 0 fn 0)
+bench P6 alt 92 az +0: truth 3 | max-any 3 | max-assoc 3 | tracks 3 (tp 3 fp 0 fn 0)
+bench P6 alt 92 az +30: truth 3 | max-any 3 | max-assoc 3 | tracks 3 (tp 3 fp 0 fn 0)
+bench P7 alt 60 az -30: truth 4 | max-any 4 | max-assoc 4 | tracks 4 (tp 4 fp 0 fn 0)
+bench P7 alt 60 az +0: truth 4 | max-any 4 | max-assoc 4 | tracks 4 (tp 4 fp 0 fn 0)
+bench P7 alt 60 az +30: truth 4 | max-any 4 | max-assoc 4 | tracks 4 (tp 4 fp 0 fn 0)
+bench P7 alt 76 az -30: truth 4 | max-any 4 | max-assoc 4 | tracks 4 (tp 4 fp 0 fn 0)
+bench P7 alt 76 az +0: truth 4 | max-any 4 | max-assoc 4 | tracks 4 (tp 4 fp 0 fn 0)
+bench P7 alt 76 az +30: truth 4 | max-any 4 | max-assoc 4 | tracks 4 (tp 4 fp 0 fn 0)
+bench P7 alt 92 az -30: truth 4 | max-any 4 | max-assoc 4 | tracks 4 (tp 4 fp 0 fn 0)
+bench P7 alt 92 az +0: truth 4 | max-any 4 | max-assoc 4 | tracks 4 (tp 4 fp 0 fn 0)
+bench P7 alt 92 az +30: truth 4 | max-any 4 | max-assoc 4 | tracks 4 (tp 4 fp 0 fn 0)
+bench H1 alt 60 az -30: truth 3 | max-any 3 | max-assoc 3 | tracks 3 (tp 3 fp 0 fn 0)
+bench H1 alt 60 az +0: truth 3 | max-any 3 | max-assoc 3 | tracks 3 (tp 3 fp 0 fn 0)
+bench H1 alt 60 az +30: truth 3 | max-any 3 | max-assoc 3 | tracks 3 (tp 3 fp 0 fn 0)
+bench H1 alt 76 az -30: truth 3 | max-any 3 | max-assoc 3 | tracks 3 (tp 3 fp 0 fn 0)
+bench H1 alt 76 az +0: truth 3 | max-any 3 | max-assoc 3 | tracks 3 (tp 3 fp 0 fn 0)
+bench H1 alt 76 az +30: truth 3 | max-any 3 | max-assoc 3 | tracks 3 (tp 3 fp 0 fn 0)
+bench H1 alt 92 az -30: truth 3 | max-any 3 | max-assoc 3 | tracks 3 (tp 3 fp 0 fn 0)
+bench H1 alt 92 az +0: truth 3 | max-any 3 | max-assoc 3 | tracks 3 (tp 3 fp 0 fn 0)
+bench H1 alt 92 az +30: truth 3 | max-any 3 | max-assoc 3 | tracks 3 (tp 3 fp 0 fn 0)
+{
+ "rule_max_any_box": {
+  "views": 72,
+  "exact_count_views": 55,
+  "mean_abs_count_error": 0.319,
+  "overcount_views": 0,
+  "undercount_views": 17
+ },
+ "rule_max_associated": {
+  "views": 72,
+  "exact_count_views": 55,
+  "mean_abs_count_error": 0.319,
+  "overcount_views": 0,
+  "undercount_views": 17
+ },
+ "rule_static_tracks": {
+  "views": 72,
+  "exact_count_views": 51,
+  "mean_abs_count_error": 0.375,
+  "overcount_views": 0,
+  "undercount_views": 21
+ },
+ "production_matched": {
+  "persons_true": 216,
+  "tp": 189,
+  "fp": 0,
+  "fn": 27,
+  "precision": 1.0,
+  "recall": 0.875,
+  "note": "static-track rule, tracks matched to true survivor positions within 1.5 m"
+ }
+}

@@ -1,0 +1,349 @@
+{
+  "end_reason": "mission complete, fleet landed",
+  "sim_time_s": 443.1,
+  "config": {
+    "seed": 7,
+    "radio_profile": "simple",
+    "backup_policy": "spare",
+    "planner": "GroundStation",
+    "link_rate_mbps": 4.0,
+    "mac_retries": 3
+  },
+  "mission": {
+    "pois_total": 7,
+    "pois_delivered": 7,
+    "completion_pct": 100.0,
+    "completion_definition": "a site is complete when all its imagery chunks (46 x 32768 B) are at the GCS",
+    "all_delivered_at_s": 316.2,
+    "fleet_landed_at_s_observer": 441.9,
+    "fleet_landed_confirmed_by_gcs_s": 443.1,
+    "unaccounted_by_gcs": [],
+    "sites": {
+      "P1": {
+        "priority": 1,
+        "added_s": 0.0,
+        "surveyed_s": 61.8,
+        "surveyed_by": 4,
+        "imagery_delivered_s": 66.3,
+        "survey_to_gcs_s": 4.5,
+        "report_to_gcs_s": 66.3,
+        "within_internal_deadline": true,
+        "persons_detected": null,
+        "persons_ground_truth": 3
+      },
+      "P2": {
+        "priority": 1,
+        "added_s": 0.0,
+        "surveyed_s": 69.7,
+        "surveyed_by": 1,
+        "imagery_delivered_s": 77.0,
+        "survey_to_gcs_s": 7.3,
+        "report_to_gcs_s": 77.0,
+        "within_internal_deadline": true,
+        "persons_detected": null,
+        "persons_ground_truth": 2
+      },
+      "P3": {
+        "priority": 1,
+        "added_s": 0.0,
+        "surveyed_s": 113.8,
+        "surveyed_by": 4,
+        "imagery_delivered_s": 123.1,
+        "survey_to_gcs_s": 9.3,
+        "report_to_gcs_s": 123.1,
+        "within_internal_deadline": true,
+        "persons_detected": null,
+        "persons_ground_truth": 4
+      },
+      "P4": {
+        "priority": 1,
+        "added_s": 0.0,
+        "surveyed_s": 193.7,
+        "surveyed_by": 4,
+        "imagery_delivered_s": 221.1,
+        "survey_to_gcs_s": 27.3,
+        "report_to_gcs_s": 221.1,
+        "within_internal_deadline": true,
+        "persons_detected": null,
+        "persons_ground_truth": 3
+      },
+      "P5": {
+        "priority": 1,
+        "added_s": 0.0,
+        "surveyed_s": 174.8,
+        "surveyed_by": 1,
+        "imagery_delivered_s": 219.8,
+        "survey_to_gcs_s": 45.0,
+        "report_to_gcs_s": 219.8,
+        "within_internal_deadline": true,
+        "persons_detected": null,
+        "persons_ground_truth": 2
+      },
+      "P6": {
+        "priority": 1,
+        "added_s": 0.0,
+        "surveyed_s": 278.1,
+        "surveyed_by": 2,
+        "imagery_delivered_s": 305.9,
+        "survey_to_gcs_s": 27.7,
+        "report_to_gcs_s": 305.9,
+        "within_internal_deadline": true,
+        "persons_detected": null,
+        "persons_ground_truth": 3
+      },
+      "P7": {
+        "priority": 1,
+        "added_s": 0.0,
+        "surveyed_s": 260.0,
+        "surveyed_by": 4,
+        "imagery_delivered_s": 315.8,
+        "survey_to_gcs_s": 55.8,
+        "report_to_gcs_s": 315.8,
+        "within_internal_deadline": true,
+        "persons_detected": null,
+        "persons_ground_truth": 4
+      }
+    },
+    "survey_to_gcs_latency_s": {
+      "mean": 25.3,
+      "max": 55.8
+    },
+    "sites_within_internal_deadline": 7,
+    "internal_deadline_s": 60.0,
+    "high_priority_response_s": []
+  },
+  "perception": {
+    "count_rule": "per site: maximum number of person boxes associated with the site in any single onboard frame during the survey hover",
+    "sites_scored": 0,
+    "sites_exact": 0,
+    "persons_undercount": 0,
+    "persons_overcount": 0,
+    "note": "count error only: no per-person matching, so misses and false detections at one site can cancel; empty = no detector (headless)"
+  },
+  "communication": {
+    "connectivity_pct": 96.6,
+    "disconnected_uav_s": 75.7,
+    "network_state_pct": {
+      "connected_redundant": 30.4,
+      "connected_single_point": 52.4,
+      "partitioned": 17.2
+    },
+    "network_state_definition": "share of time with >= 1 airborne mission UAV: partitioned (some UAV has no route) / connected with a critical relay / connected and redundant",
+    "worst_critical_relay_dependants": 4,
+    "outage_episodes": {
+      "per_uav_episodes": 2,
+      "mission_partition_episodes": 2,
+      "merge_policy": "per UAV, route gaps shorter than 1.0s are one episode; mission episodes = union over UAVs",
+      "by_cause": {
+        "survey beyond the network (planned by GCS)": {
+          "episodes": 2,
+          "uav_s": 75.6
+        }
+      },
+      "fault_attributed_uav_s": 0,
+      "not_fault_attributed_uav_s": 75.6,
+      "gcs_silences": 2,
+      "gcs_silences_with_path_present": 0
+    },
+    "classes": {
+      "hb": {
+        "generated": 4431,
+        "delivered": 4285,
+        "expired": 145,
+        "hop_tx": 8466,
+        "pending_end": 1,
+        "bytes_generated": 886200,
+        "bytes_on_air": 1693200,
+        "pdr_cohort_pct": 96.7,
+        "latency": {
+          "n": 4285,
+          "p50_s": 0.042,
+          "p95_s": 0.306,
+          "max_s": 2.04
+        }
+      },
+      "cmd": {
+        "generated": 4430,
+        "delivered": 4285,
+        "expired": 144,
+        "lost": 1,
+        "hop_tx": 8507,
+        "bytes_generated": 1329000,
+        "bytes_on_air": 2552100,
+        "pdr_cohort_pct": 96.7,
+        "latency": {
+          "n": 4285,
+          "p50_s": 0.042,
+          "p95_s": 0.281,
+          "max_s": 2.007
+        }
+      },
+      "ack": {
+        "generated": 400,
+        "delivered": 400,
+        "hop_tx": 1289,
+        "bytes_generated": 16000,
+        "bytes_on_air": 51560,
+        "pdr_cohort_pct": 100.0,
+        "latency": {
+          "n": 400,
+          "p50_s": 0.249,
+          "p95_s": 0.642,
+          "max_s": 1.162
+        }
+      },
+      "data": {
+        "generated": 322,
+        "delivered": 322,
+        "hop_tx": 1304,
+        "e2e_retransmissions": 78,
+        "bytes_generated": 10551296,
+        "bytes_on_air": 42729472,
+        "latency": {
+          "n": 322,
+          "p50_s": 0.596,
+          "p95_s": 6.733,
+          "max_s": 30.809
+        }
+      },
+      "thumb": {
+        "generated": 940,
+        "delivered": 895,
+        "expired": 44,
+        "lost": 1,
+        "hop_tx": 1938,
+        "bytes_generated": 7520000,
+        "bytes_on_air": 15504000,
+        "pdr_cohort_pct": 95.1,
+        "latency": {
+          "n": 895,
+          "p50_s": 0.074,
+          "p95_s": 0.609,
+          "max_s": 2.009
+        }
+      }
+    },
+    "command_ack_latency_s": {
+      "n": 4194,
+      "p50": 0.49,
+      "p95": 0.729,
+      "max": 3.545
+    },
+    "commands_superseded_before_delivery": 190,
+    "commands_discarded_stale": 0,
+    "commands_discarded_expired": 1,
+    "heartbeats_discarded_stale_at_gcs": 0,
+    "imagery_chunks_duplicate_at_gcs": 78,
+    "airtime_s": {
+      "0": 5.2,
+      "1": 22.5,
+      "2": 20.2,
+      "3": 31.6,
+      "4": 21.4,
+      "5": 35.0
+    },
+    "mean_hops": 2.03,
+    "max_hops": 4
+  },
+  "relay": {
+    "energy_handovers": [],
+    "redundancy_infeasible": [
+      [
+        52.3,
+        "no spare UAV for a backup relay (6 site(s) still unserved)"
+      ],
+      [
+        60.5,
+        "no spare UAV for a backup relay (5 site(s) still unserved)"
+      ],
+      [
+        66.6,
+        "no spare UAV for a backup relay (4 site(s) still unserved)"
+      ],
+      [
+        124.0,
+        "no spare UAV for a backup relay (3 site(s) still unserved)"
+      ],
+      [
+        220.2,
+        "no spare UAV for a backup relay (2 site(s) still unserved)"
+      ],
+      [
+        221.2,
+        "no spare UAV for a backup relay (1 site(s) still unserved)"
+      ],
+      [
+        305.9,
+        "no spare UAV for a backup relay (0 site(s) still unserved)"
+      ]
+    ]
+  },
+  "faults": [],
+  "safety": {
+    "thresholds": {
+      "near_miss_m": 5.0,
+      "collision_proxy_m": 1.5,
+      "note": "geometric proxies on kinematic trajectories; closest approach checked continuously between 64 ms samples"
+    },
+    "min_separation_m": 6.01,
+    "near_miss_episodes": 0,
+    "collision_proxy_episodes": 0,
+    "controller_caused_episodes": 0,
+    "violation_time_s": 0,
+    "episodes": [],
+    "min_terrain_clearance_cruise_m": 59.5,
+    "geofence_violations": 0,
+    "min_airborne_battery_pct": 76.6,
+    "battery_depletions": 0,
+    "landings": [
+      {
+        "uav": 1,
+        "t": 417.3,
+        "battery_pct": 77.4
+      },
+      {
+        "uav": 2,
+        "t": 441.9,
+        "battery_pct": 76.6
+      },
+      {
+        "uav": 3,
+        "t": 384.3,
+        "battery_pct": 82.9
+      },
+      {
+        "uav": 4,
+        "t": 403.6,
+        "battery_pct": 78.3
+      },
+      {
+        "uav": 5,
+        "t": 359.2,
+        "battery_pct": 84.5
+      }
+    ]
+  },
+  "information_flow": {
+    "gcs_heartbeats_applied": 4285,
+    "gcs_heartbeats_stale_discarded": 0,
+    "heartbeats_that_crossed_the_channel": 4285,
+    "uav_commands_applied": 4284,
+    "commands_that_crossed_the_channel": 4285,
+    "gcs_chunks_received": 400,
+    "chunks_that_crossed_the_channel": 400,
+    "bypass": false
+  },
+  "constraints": {
+    "eventually_complete": true,
+    "imagery_complete_by": true,
+    "fleet_landed_by": true,
+    "high_priority_response": true,
+    "timely_sites": true,
+    "separation": true,
+    "no_collision": true,
+    "geofence": true,
+    "no_depletion": true,
+    "landing_reserve": true,
+    "operational_success": true
+  }
+}

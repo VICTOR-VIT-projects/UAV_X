@@ -1,0 +1,451 @@
+{
+ "per_uav_route_episodes": [
+  {
+   "uav": 1,
+   "start": 150.02,
+   "status": "ACTIVE",
+   "task": "SURVEY",
+   "task_target": "P5",
+   "data_mule": false,
+   "radio_ok": true,
+   "survey_point_to_nearest_node_m": 754.5,
+   "pos_start": [
+    -157,
+    438,
+    60
+   ],
+   "nearest_node": 2,
+   "nearest_m": 528.2,
+   "min_nearest_m": 515.8,
+   "moving_away": true,
+   "last_route_parent": 2,
+   "parent_moving": false,
+   "dist_to_last_parent_m": 528.2,
+   "parent_cut_same_time": false,
+   "parent_task_changed_s_ago": 25.7,
+   "hb_pdr_prev_10s": 100.0,
+   "gcs_heartbeat_age_s": 0.28,
+   "queue_len": 0,
+   "concurrent_faults": [
+    {
+     "type": "uav_failure",
+     "uav": 5,
+     "t": 150.0
+    }
+   ],
+   "role_transitions": [],
+   "end": 165.06,
+   "duration_s": 15.04,
+   "end_reason": "route regained",
+   "pos_end": [
+    -257,
+    301,
+    60
+   ],
+   "route_after": [
+    1,
+    2,
+    3,
+    0
+   ],
+   "cause": "fault-attributed: upstream relay lost"
+  },
+  {
+   "uav": 2,
+   "start": 150.02,
+   "status": "ACTIVE",
+   "task": "RELAY",
+   "task_target": "P4",
+   "data_mule": false,
+   "radio_ok": true,
+   "survey_point_to_nearest_node_m": null,
+   "pos_start": [
+    12,
+    -62,
+    68
+   ],
+   "nearest_node": 4,
+   "nearest_m": 300.3,
+   "min_nearest_m": 228.2,
+   "moving_away": false,
+   "last_route_parent": 3,
+   "parent_moving": true,
+   "dist_to_last_parent_m": 416.0,
+   "parent_cut_same_time": false,
+   "parent_task_changed_s_ago": 25.6,
+   "hb_pdr_prev_10s": 100.0,
+   "gcs_heartbeat_age_s": 0.19,
+   "queue_len": 0,
+   "concurrent_faults": [
+    {
+     "type": "uav_failure",
+     "uav": 5,
+     "t": 150.0
+    }
+   ],
+   "role_transitions": [],
+   "end": 165.06,
+   "duration_s": 15.04,
+   "end_reason": "route regained",
+   "pos_end": [
+    -134,
+    -196,
+    68
+   ],
+   "route_after": [
+    2,
+    3,
+    0
+   ],
+   "cause": "fault-attributed: upstream relay lost"
+  },
+  {
+   "uav": 3,
+   "start": 150.02,
+   "status": "ACTIVE",
+   "task": "RELAY",
+   "task_target": "P4",
+   "data_mule": false,
+   "radio_ok": true,
+   "survey_point_to_nearest_node_m": null,
+   "pos_start": [
+    -269,
+    -369,
+    76
+   ],
+   "nearest_node": 4,
+   "nearest_m": 396.6,
+   "min_nearest_m": 385.8,
+   "moving_away": true,
+   "last_route_parent": 5,
+   "parent_moving": true,
+   "dist_to_last_parent_m": 366.5,
+   "parent_cut_same_time": false,
+   "parent_task_changed_s_ago": 25.9,
+   "hb_pdr_prev_10s": 100.0,
+   "gcs_heartbeat_age_s": 0.13,
+   "queue_len": 0,
+   "concurrent_faults": [
+    {
+     "type": "uav_failure",
+     "uav": 5,
+     "t": 150.0
+    }
+   ],
+   "role_transitions": [],
+   "end": 165.06,
+   "duration_s": 15.04,
+   "end_reason": "route regained",
+   "pos_end": [
+    -421,
+    -459,
+    76
+   ],
+   "route_after": [
+    3,
+    0
+   ],
+   "cause": "fault-attributed: upstream relay lost"
+  },
+  {
+   "uav": 4,
+   "start": 150.02,
+   "status": "ACTIVE",
+   "task": "SURVEY",
+   "task_target": "P4",
+   "data_mule": false,
+   "radio_ok": true,
+   "survey_point_to_nearest_node_m": 322.5,
+   "pos_start": [
+    126,
+    -340,
+    84
+   ],
+   "nearest_node": 2,
+   "nearest_m": 300.3,
+   "min_nearest_m": 228.2,
+   "moving_away": false,
+   "last_route_parent": 3,
+   "parent_moving": true,
+   "dist_to_last_parent_m": 396.6,
+   "parent_cut_same_time": true,
+   "parent_task_changed_s_ago": 25.6,
+   "hb_pdr_prev_10s": 100.0,
+   "gcs_heartbeat_age_s": 0.51,
+   "queue_len": 1,
+   "concurrent_faults": [
+    {
+     "type": "uav_failure",
+     "uav": 5,
+     "t": 150.0
+    }
+   ],
+   "role_transitions": [],
+   "end": 165.06,
+   "duration_s": 15.04,
+   "end_reason": "route regained",
+   "pos_end": [
+    -21,
+    -379,
+    84
+   ],
+   "route_after": [
+    4,
+    3,
+    0
+   ],
+   "cause": "fault-attributed: upstream relay lost"
+  },
+  {
+   "uav": 1,
+   "start": 300.03,
+   "status": "ACTIVE",
+   "task": "SURVEY",
+   "task_target": "H1",
+   "data_mule": false,
+   "radio_ok": false,
+   "survey_point_to_nearest_node_m": 381.7,
+   "pos_start": [
+    -607,
+    803,
+    60
+   ],
+   "nearest_node": 2,
+   "nearest_m": 381.7,
+   "min_nearest_m": 8.2,
+   "moving_away": false,
+   "last_route_parent": 2,
+   "parent_moving": false,
+   "dist_to_last_parent_m": 381.7,
+   "parent_cut_same_time": false,
+   "parent_task_changed_s_ago": 79.0,
+   "hb_pdr_prev_10s": 100.0,
+   "gcs_heartbeat_age_s": 0.3,
+   "queue_len": 0,
+   "concurrent_faults": [
+    {
+     "type": "uav_failure",
+     "uav": 5,
+     "t": 150.0
+    },
+    {
+     "type": "comm_outage",
+     "uav": 1,
+     "t": 300.0
+    }
+   ],
+   "role_transitions": [],
+   "end": 345.02,
+   "duration_s": 44.99,
+   "end_reason": "route regained",
+   "pos_end": [
+    -699,
+    160,
+    60
+   ],
+   "route_after": [
+    1,
+    3,
+    0
+   ],
+   "cause": "injected radio outage (own radio off)"
+  },
+  {
+   "uav": 2,
+   "start": 462.98,
+   "status": "ACTIVE",
+   "task": "SURVEY",
+   "task_target": "P6",
+   "data_mule": false,
+   "radio_ok": true,
+   "survey_point_to_nearest_node_m": 722.9,
+   "pos_start": [
+    347,
+    113,
+    68
+   ],
+   "nearest_node": 1,
+   "nearest_m": 600.7,
+   "min_nearest_m": 599.4,
+   "moving_away": false,
+   "last_route_parent": 1,
+   "parent_moving": true,
+   "dist_to_last_parent_m": 600.7,
+   "parent_cut_same_time": false,
+   "parent_task_changed_s_ago": 40.2,
+   "hb_pdr_prev_10s": 100.0,
+   "gcs_heartbeat_age_s": 0.17,
+   "queue_len": 0,
+   "concurrent_faults": [
+    {
+     "type": "comm_outage",
+     "uav": 1,
+     "t": 300.0
+    }
+   ],
+   "role_transitions": [],
+   "end": 512.64,
+   "duration_s": 49.66,
+   "end_reason": "route regained",
+   "pos_end": [
+    580,
+    -269,
+    68
+   ],
+   "route_after": [
+    2,
+    1,
+    4,
+    0
+   ],
+   "cause": "survey beyond the network (planned by GCS)"
+  },
+  {
+   "uav": 2,
+   "start": 546.05,
+   "status": "ACTIVE",
+   "task": "SURVEY",
+   "task_target": "P7",
+   "data_mule": false,
+   "radio_ok": true,
+   "survey_point_to_nearest_node_m": 987.4,
+   "pos_start": [
+    447,
+    -50,
+    68
+   ],
+   "nearest_node": 1,
+   "nearest_m": 601.3,
+   "min_nearest_m": 599.8,
+   "moving_away": true,
+   "last_route_parent": 1,
+   "parent_moving": true,
+   "dist_to_last_parent_m": 601.3,
+   "parent_cut_same_time": false,
+   "parent_task_changed_s_ago": 19.3,
+   "hb_pdr_prev_10s": 100.0,
+   "gcs_heartbeat_age_s": 0.26,
+   "queue_len": 0,
+   "concurrent_faults": [],
+   "role_transitions": [],
+   "end": 617.86,
+   "duration_s": 71.81,
+   "end_reason": "route regained",
+   "pos_end": [
+    242,
+    242,
+    68
+   ],
+   "route_after": [
+    2,
+    1,
+    4,
+    0
+   ],
+   "cause": "survey beyond the network (planned by GCS)"
+  }
+ ],
+ "mission_partition_episodes": [
+  {
+   "start": 150.02,
+   "uavs": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "end": 166.08,
+   "duration_s": 16.06
+  },
+  {
+   "start": 300.03,
+   "uavs": [
+    1
+   ],
+   "end": 346.05,
+   "duration_s": 46.02
+  },
+  {
+   "start": 462.98,
+   "uavs": [
+    2
+   ],
+   "end": 513.66,
+   "duration_s": 50.68
+  },
+  {
+   "start": 546.05,
+   "uavs": [
+    2
+   ],
+   "end": 618.88,
+   "duration_s": 72.83
+  }
+ ],
+ "gcs_silence_episodes": [
+  {
+   "uav": 3,
+   "declared": 152.9,
+   "silent_since": 149.89,
+   "reacquired": 165.12,
+   "duration_s": 15.23,
+   "routed_fraction": 0.0,
+   "kind": "graph disconnection"
+  },
+  {
+   "uav": 2,
+   "declared": 152.83,
+   "silent_since": 149.83,
+   "reacquired": 165.18,
+   "duration_s": 15.35,
+   "routed_fraction": 0.01,
+   "kind": "graph disconnection"
+  },
+  {
+   "uav": 4,
+   "declared": 152.51,
+   "silent_since": 149.5,
+   "reacquired": 165.18,
+   "duration_s": 15.68,
+   "routed_fraction": 0.01,
+   "kind": "graph disconnection"
+  },
+  {
+   "uav": 1,
+   "declared": 152.77,
+   "silent_since": 149.74,
+   "reacquired": 165.31,
+   "duration_s": 15.57,
+   "routed_fraction": 0.02,
+   "kind": "graph disconnection"
+  },
+  {
+   "uav": 1,
+   "declared": 302.78,
+   "silent_since": 299.73,
+   "reacquired": 345.66,
+   "duration_s": 45.93,
+   "routed_fraction": 0.01,
+   "kind": "graph disconnection"
+  },
+  {
+   "uav": 2,
+   "declared": 465.86,
+   "silent_since": 462.8,
+   "reacquired": 512.77,
+   "duration_s": 49.97,
+   "routed_fraction": 0.0,
+   "kind": "graph disconnection"
+  },
+  {
+   "uav": 2,
+   "declared": 548.8,
+   "silent_since": 545.79,
+   "reacquired": 618.05,
+   "duration_s": 72.26,
+   "routed_fraction": 0.0,
+   "kind": "graph disconnection"
+  }
+ ],
+ "safety_episodes": []
+}

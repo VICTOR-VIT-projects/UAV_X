@@ -1,0 +1,48 @@
+{
+ "tag": "nofault",
+ "all_pass": true,
+ "checks": [
+  {
+   "check": "disconnected_uav_s",
+   "recomputed": 75.7,
+   "reported": 75.7,
+   "tolerance": 2.0,
+   "pass": true
+  },
+  {
+   "check": "connectivity_pct",
+   "recomputed": 96.6,
+   "reported": 96.6,
+   "tolerance": 0.3,
+   "pass": true
+  },
+  {
+   "check": "per_uav_outage_episodes",
+   "recomputed": 2,
+   "reported": 2,
+   "tolerance": 1,
+   "pass": true
+  },
+  {
+   "check": "hb_pdr_cohort_pct",
+   "recomputed": 96.7,
+   "reported": 96.7,
+   "tolerance": 0.1,
+   "pass": true
+  },
+  {
+   "check": "data_unique_generated",
+   "recomputed": 322,
+   "reported": 322,
+   "tolerance": 0,
+   "pass": true
+  },
+  {
+   "check": "data_unique_delivered",
+   "recomputed": 322,
+   "reported": 322,
+   "tolerance": 0,
+   "pass": true
+  }
+ ]
+}
